@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import Clientes
 
-# Create your views here.
+def vistaclientes(request):
+        clientes = Clientes.objects.all()
+        return render(request, 'localdejuego/clientes.html', {'clientes': clientes})

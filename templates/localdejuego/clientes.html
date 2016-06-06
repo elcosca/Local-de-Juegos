@@ -1,0 +1,11 @@
+    <div>
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+
+        <div>
+    {% for c in clientes %}
+        <div class="Clientes"">
+            <h1> <a href="">{{ c.apellido }}</a></h1>
+            <p>{{ d.nombre|linebreaks }}</p>
+        </div>
+    {% endfor %}
